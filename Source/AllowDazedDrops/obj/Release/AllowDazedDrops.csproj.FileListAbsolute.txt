@@ -1,0 +1,3 @@
+C:\Program Files (x86)\RimWorld1135Win\Mods\AllowDazedDrops\Assemblies\AllowDazedDrops.dll
+C:\Program Files (x86)\RimWorld1135Win\Mods\AllowDazedDrops\Source\AllowDazedDrops\obj\Release\AllowDazedDrops.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\RimWorld1135Win\Mods\AllowDazedDrops\Source\AllowDazedDrops\obj\Release\AllowDazedDrops.dll
