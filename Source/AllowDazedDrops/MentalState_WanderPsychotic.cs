@@ -7,7 +7,7 @@ using Verse.AI;
 
 namespace AllowDazedDrops
 {
-	public class MentalState_DazedWander : MentalState
+	public class MentalState_WanderPsychotic : MentalState
 	{
 		private const float DropRandomItemMTBHours = 3f;
 
@@ -30,10 +30,10 @@ namespace AllowDazedDrops
 			{
 				return;
 			}
-			MentalState_DazedWander.actions.Clear();
+			MentalState_WanderPsychotic.actions.Clear();
 			if (this.pawn.apparel != null && this.pawn.apparel.WornApparelCount > 0)
 			{
-				MentalState_DazedWander.actions.Add(delegate
+				MentalState_WanderPsychotic.actions.Add(delegate
 				{
                     //this.pawn.jobs.StopAll(false);
                     //this.pawn.jobs.StartJob(new Job(JobDefOf.RemoveApparel, this.pawn.apparel.WornApparel.RandomElement<Apparel>()), JobCondition.None, null, false, true, null);
@@ -45,7 +45,7 @@ namespace AllowDazedDrops
 
             if (this.pawn.equipment != null && this.pawn.equipment.AllEquipment.Any<ThingWithComps>())
 			{
-				MentalState_DazedWander.actions.Add(delegate
+				MentalState_WanderPsychotic.actions.Add(delegate
 				{
 					ThingWithComps thingWithComps;
 					this.pawn.equipment.TryDropEquipment(this.pawn.equipment.AllEquipment.RandomElement<ThingWithComps>(), out thingWithComps, this.pawn.Position, false);
@@ -58,18 +58,18 @@ namespace AllowDazedDrops
 				select x;
 				if (candidates.Any<Thing>())
 				{
-					MentalState_DazedWander.actions.Add(delegate
+					MentalState_WanderPsychotic.actions.Add(delegate
 					{
 						Thing thing;
 						this.pawn.inventory.container.TryDrop(candidates.RandomElement<Thing>(), this.pawn.Position, ThingPlaceMode.Near, out thing);
 					});
 				}
 			}
-			if (!MentalState_DazedWander.actions.Any<Action>())
+			if (!MentalState_WanderPsychotic.actions.Any<Action>())
 			{
 				return;
 			}
-			MentalState_DazedWander.actions.RandomElement<Action>()();
+			MentalState_WanderPsychotic.actions.RandomElement<Action>()();
 		}
 
 		public override RandomSocialMode SocialModeMax()
