@@ -7,7 +7,7 @@
 
     <url>https://ludeon.com/forums/index.php?topic=21938.0</url>
 
-    <targetVersion>0.14.1234</targetVersion>
+    <targetVersion>0.15.1280</targetVersion>
 
     <description>Items dropped by dazed pawns will not be forbidden by default</description>
 

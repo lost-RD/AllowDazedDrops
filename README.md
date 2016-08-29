@@ -1,5 +1,6 @@
 # AllowDazedDrops
 RimWorld mod for sirgzu
+
 Apparel and equipment drop by dazed pawns will not be dropped in the forbidden state.
 
 ##Changelog:
