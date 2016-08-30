@@ -5,13 +5,13 @@
     <minTicksBeforeRecovery>10000</minTicksBeforeRecovery>
     <recoveryMtbDays>0.3</recoveryMtbDays>
   </MentalStateDef>
-
+  
   <!-- Mental breaks: serious -->
 
   <MentalBreakDef>
     <defName>WanderPsychotic</defName>
     <mentalState>WanderPsychotic</mentalState>
-    <commonality>1</commonality>
+    <baseCommonality>1</baseCommonality>
     <intensity>Major</intensity>
   </MentalBreakDef>
   <MentalStateDef ParentName="BaseMentalState">
@@ -29,7 +29,7 @@
     <beginLetterLabel>daze</beginLetterLabel>
     <beginLetter>{0} is wandering around in a psychotic state.</beginLetter>
     <beginLetterType>BadNonUrgent</beginLetterType>
-    <inspectLine>Mental state: Psychotic wandering</inspectLine>
+    <baseInspectLine>Mental state: Psychotic wandering</baseInspectLine>
     <tale>MentalStateGaveUp</tale>
   </MentalStateDef>
 
