@@ -3,6 +3,8 @@ RimWorld mod for sirgzu
 
 Apparel and equipment drop by dazed pawns will not be dropped in the forbidden state.
 
+In A16, this mod is redundant.
+
 ##Changelog:
 
 ###1.0:
